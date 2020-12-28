@@ -1,0 +1,62 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px){
+    .menu {
+        text-align: right;
+    }
+    .menu-icon {
+        display: inline-block;
+        font-size: 30px;
+        padding: 10px;        
+      }
+    .header-wrapper {
+        display: none;
+    }
+    .features {
+        padding: 50px 100px;
+    }
+    .programs {
+        padding: 50px 100px;
+    }
+    .reviews {
+        padding: 50px 100px;
+    }
+    .card {
+        width: 100%;
+    }
+    .table  {
+        width: 95%;
+    }
+    .steps .container{
+        width: 80%;
+      }
+    .review img{
+        left:42%; 
+    }
+    .faq .container  {
+        width: 80%;
+    }
+    .box {
+        width: 80%;
+        color: white;
+      }
+}
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px){
+    .features {
+        padding: 50px 0px;
+    }
+    .programs {
+        padding: 50px 0px;
+    }
+    .reviews {
+        padding: 50px 0px;
+    }
+    .card {
+        flex: auto;
+    }
+    .review img{
+        left:41%; 
+      }
+    
+}
