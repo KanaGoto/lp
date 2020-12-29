@@ -105,7 +105,8 @@ a {
   padding: 30px 0 16px 0;
 }
 .top-txt .desc {
-  padding: 50px;
+  width: 530px;
+  margin: 40px auto;
 }
 .top-txt h2{ 
   color: white;

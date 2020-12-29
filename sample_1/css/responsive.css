@@ -47,6 +47,9 @@
     .desc {
         font-size: 15px;
     }
+    .top-txt .desc {
+        width: 90%;
+    }
     .top-wrapper h1 {
         font-size: 30px;
     }
@@ -66,7 +69,8 @@
     }
     .toiawase a{
         font-size: 13px;
-        padding: 5px;
+        padding: 7px;
+        font-weight: bold;
     }
     .table {
         font-size: 12px;
