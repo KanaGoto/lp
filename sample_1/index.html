@@ -13,7 +13,29 @@
     <script type="text/javascript">
         $(function(){
             $('.q h3').click(function(){
-            $(this).next('.a').slideToggle();
+                $(this).next('.a').slideToggle();
+            });
+
+            $("#modal-open").click(function(){
+                //キーボード操作などにより、オーバーレイが多重起動するのを防止する
+                $(this).blur() ;	//ボタンからフォーカスを外す
+                if($("#modal-overlay")[0]) return false ;		//新しくモーダルウィンドウを起動しない [下とどちらか選択]
+
+                //オーバーレイ用のHTMLコードを、[body]内の最後に生成する
+                $("body").append('<div id="modal-overlay"></div>');
+
+                $("#modal-overlay").fadeIn("slow");
+                
+                $("#modal-content").fadeIn("slow");
+
+            });
+            
+            $("#modal-overlay,#modal-close, .modal-list li").unbind().click(function(){
+                //[#modal-overlay]と[#modal-close]をフェードアウトする
+                $("#modal-content,#modal-overlay").fadeOut("slow",function(){
+                    //フェードアウト後、[#modal-overlay]をHTML(DOM)上から削除
+                    $("#modal-overlay").remove();
+                });
             });
         });
     </script>
@@ -22,7 +44,7 @@
             <div class="header-logo">
                 <a href="#"><img src="img/logo.png" alt=""></a>                
             </div>
-            <div class="menu">
+            <div id="modal-open" class="menu">
                 <i class="fas fa-bars"></i>
             </div>
             <div class="header-wrapper">
@@ -33,6 +55,19 @@
                     <li><a href="#steps">参加の流れ</a></li>
                     <li><a href="#reviews">参加者の声</a></li>
                     <li><a href="" class="btn search"><i class="fa fa-file-alt"> 資料のご請求</i></a></li>
+                    <div class="clear"></div>
+                </ul> 
+            </div> 
+        </div>
+        <div id="modal-content">
+            <i id="modal-close" class="fas fa-times"></i>              
+            <div>
+                <ul class="modal-list">
+                    <li><a href="#features">ワークステイとは</a></li>
+                    <li><a href="#programs">体験プログラム</a></li>
+                    <li><a href="#cost">費用・期間</a></li>
+                    <li><a href="#steps">参加の流れ</a></li>
+                    <li><a href="#reviews">参加者の声</a></li>
                     <div class="clear"></div>
                 </ul> 
             </div> 
