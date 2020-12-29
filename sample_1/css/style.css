@@ -378,3 +378,7 @@ table th, table td {
   background-size: cover;
   padding: 30px;
 }
+.map {
+  width: 400px;
+  height: 300px;
+}
