@@ -1,10 +1,10 @@
 /* タブレット向けレイアウト */
 @media all and (max-width: 1000px){
     .menu {
-        text-align: right;
+        display: block;
+        float: right;
     }
     .menu-icon {
-        display: inline-block;
         font-size: 30px;
         padding: 10px;        
       }

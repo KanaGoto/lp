@@ -7,7 +7,7 @@ body {
 * {
   box-sizing: border-box;
 }
-.menu-icon {
+.menu{
   display: none;
 }
 li {
