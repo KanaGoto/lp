@@ -43,6 +43,36 @@
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px){
+    .desc {
+        font-size: 15px;
+    }
+    .top-wrapper h1 {
+        font-size: 30px;
+    }
+    .top-wrapper h3 {
+        font-size: 20px;
+    }
+    .top-wrapper h4 {
+        font-size: 20px;
+    }
+    .detail-search {
+        font-size: 15px;
+    }
+    .toiawase h2 {
+        font-size: 15px;
+        padding: 10px;
+        margin: 0;
+    }
+    .toiawase a{
+        font-size: 13px;
+        padding: 5px;
+    }
+    .table {
+        font-size: 12px;
+    }
+    table th, table td {
+        padding: 3px;  
+      }
     .features {
         padding: 50px 0px;
     }
@@ -58,11 +88,31 @@
     .review img{
         left:41%; 
       }
+
+    .step h3 {
+        font-size: 15px;
+        left: 70px;
+        top: -10px;
+    }
+    .step p {
+        left: 70px;
+        top: 12px;
+        font-size: 12px;
+    }
+    .q h3 {
+        font-size: 15px;
+    }
+    .a p {
+        font-size: 13px;
+    }
     .company-info {
         padding: 50px 0px;
     }
     .map {
         width: 100%;
+    }
+    footer {
+        font-size: 10px;
     }
     
 }

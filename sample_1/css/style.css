@@ -236,6 +236,7 @@ table th, table td {
 .toiawase a {
   font-size: 18px;
   padding: 10px;
+  margin: 10px 0;
 }
 
 .programs {
@@ -346,12 +347,12 @@ table th, table td {
   border: 1px solid rgba(166, 170, 166, 0.78);
   margin: 20px 0;
   position: relative;
-  padding: 5px 0 5px 10px;
+  padding: 5px;
 }
 .q h3 {
   font-size: 20px;
   margin:0px;
-  padding: 5px;
+  padding: 0px;
 }
 .a {
   display: none;
