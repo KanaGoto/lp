@@ -30,9 +30,6 @@
     .steps .container{
         width: 80%;
       }
-    .review img{
-        left:42%; 
-    }
     .faq .container  {
         width: 80%;
     }
@@ -90,9 +87,7 @@
     .card {
         flex: auto;
     }
-    .review img{
-        left:41%; 
-      }
+
 
     .step h3 {
         font-size: 15px;
